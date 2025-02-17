@@ -1,0 +1,50 @@
+/*
+Theme Name: Wordpress embedded blog within a Project Light design site
+Theme URI: https://github.com/camunigeography/wordpress-projectlightembedded-theme/
+Description: Wordpress embedded blog within a Project Light design site
+Version: 1.0
+Author: MLS
+Author URI: https://github.com/camunigeography/wordpress-projectlightembedded-theme/
+Tags: two column, purecontent, projectlight
+*/
+
+
+/* Layout (.campl-wp-content/.campl-wp-sidebar) will be picked up from master site */
+
+/* Sidebar: avoid top-level bullet-points */
+body .campl-wp-sidebar > li {display: block; margin: 0; padding: 0; list-style: none;}
+
+/* Post spacing */
+body .campl-wp-content div.post {margin: 20px 0 50px; padding-bottom: 20px; border-bottom: 1px solid #eee;}
+
+/* Fix heading style overriden by Wordpress */
+body .campl-wp-sidebar h2:first-child {padding-top: 40px;}
+
+/* Tags */
+body .campl-wp-sidebar .tag-cloud-link {display: inline; margin: 0 15px 10px 0;}
+
+/* Alignment */
+body .campl-wp-content .aligncenter {clear: left; margin-left: auto; margin-right: auto;}
+body .campl-wp-content .alignleft {float: left;}
+body .campl-wp-content .alignright {float: right;}
+
+/* Captioned images */
+body .campl-wp-content .wp-caption {background-color: rgb(243, 243, 243); padding: 10px; border: 1px solid rgb(221, 221, 221); border-image: initial; margin-top: 10px; margin-bottom: 20px;}
+body .campl-wp-content .wp-caption .wp-caption-text {font-size: 1em; margin: 10px 0 0; line-height: 1.45em; padding: 0; color: gray; font-style: italic;}
+
+/* Front page message */
+body .campl-wp-content h4.frontpagemessage {margin-bottom: 30px;}
+
+/* Read more link */
+body .campl-wp-content a.more-link {display: inline-block; margin: 10px 0; padding: 5px 20px; border: 1px solid #ccc; background-color: #f7f7f7; text-decoration: none; color: #333;}
+
+/* Post metadata */
+body .campl-wp-content p.postmetadata {font-size: 1em;}
+
+/* Mobile skip to menu */
+p#skiptoblogmenu {display: none;}
+@media (max-width: 767px) {
+	p#skiptoblogmenu {display: block;}
+	p#skiptoblogmenu a {display: block; margin: 20px 0; padding: 10px; border: 0; background-color: gray; color: white;}
+	body .campl-wp-sidebar#blogmenu:target {animation: none;}
+}
