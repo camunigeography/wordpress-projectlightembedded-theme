@@ -2,7 +2,7 @@
 
 
 <?php if ( !is_front_page() ) : ?>
-	<a href="<?php echo home_url(); ?>">&laquo; Home</a>
+	<a href="<?php echo home_url(); ?>/">&laquo; Home</a>
 <?php endif ?>
 		
 		
